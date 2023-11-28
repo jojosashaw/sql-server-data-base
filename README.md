@@ -1,10 +1,10 @@
 # sql-server-data-base
 
 créer la base de donnée :
-```sql
+````sql
 CREATE DATABASE team_builder
 GO
-```
+````
 créer les tables : 
 ````sql
 CREATE TABLE [personnes] (
@@ -39,7 +39,7 @@ ALTER TABLE [as_team] ADD FOREIGN KEY ([team_id]) REFERENCES [team] ([id])
 GO
 ````
 insérer les données :
-
+````sql
 INSERT INTO personnes (nom, prenom) VALUES
 	('Bratt', 'Pitt'),
 	('Bruce', 'Willis'),
@@ -66,11 +66,12 @@ INSERT INTO as_team (personne_id, team_id) VALUES
 	(7,3),
 	(8,3),
 	(9,3);
-
+````
  requête pour afficher la team 1:
+ ````sql
  SELECT p.*
 FROM personnes p
 JOIN as_team at ON p.id = at.personne_id
 WHERE at.team_id = 1;
-
+````
 
