@@ -1,10 +1,10 @@
 # sql-server-data-base
 
 créer la base de donnée :
-
+```sql
 CREATE DATABASE team_builder
 GO
-
+```
 créer les tables : 
 
 CREATE TABLE [personnes] (
