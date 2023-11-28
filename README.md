@@ -6,7 +6,7 @@ CREATE DATABASE team_builder
 GO
 ```
 créer les tables : 
-
+````sql
 CREATE TABLE [personnes] (
   [id] int PRIMARY KEY IDENTITY(1, 1),
   [prenom] varchar(50),
@@ -37,7 +37,7 @@ GO
 
 ALTER TABLE [as_team] ADD FOREIGN KEY ([team_id]) REFERENCES [team] ([id])
 GO
-
+````
 insérer les données :
 
 INSERT INTO personnes (nom, prenom) VALUES
